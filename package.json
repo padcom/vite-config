@@ -8,9 +8,9 @@
   "author": "Matthias Hryniszak <padcom@gmail.com>",
   "license": "MIT",
   "workspaces": [
-    "packages/vite-default-config",
-    "packages/vite-lib-config",
-    "packages/vite-vue-config",
-    "packages/vite-vue-lib-config"
+    "packages/vite-config-default",
+    "packages/vite-config-lib",
+    "packages/vite-config-vue",
+    "packages/vite-confi-vue-libg"
   ]
 }

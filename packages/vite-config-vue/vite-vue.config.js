@@ -1,11 +1,9 @@
 import { mergeConfig } from 'vite'
-import { defineDefaultConfig } from '@padcom/vite-default-config'
+import { defineDefaultConfig } from '@padcom/vite-config-default'
 
 import svg from 'vite-svg-loader'
 import vue from '@vitejs/plugin-vue'
 import i18n from '@padcom/vite-plugin-vue-i18n'
-import nesting from 'tailwindcss/nesting'
-import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
 
 /**
@@ -29,8 +27,6 @@ export function defineVueBaseConfig(overrides = {}) {
     css: {
       postcss: {
         plugins: [
-          nesting(),
-          tailwindcss(),
           autoprefixer(),
         ],
       },
@@ -54,7 +50,7 @@ export function defineVueTestConfig(overrides = {}) {
 }
 
 /**
- * @param {import('@padcom/vite-default-config').PackageJSON} pkg
+ * @param {import('@padcom/vite-config-default').PackageJSON} pkg
  * @param {import('vite').UserConfig} overrides
  */
 export function defineVueAppConfig(pkg, overrides = {}) {

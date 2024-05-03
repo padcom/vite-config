@@ -1,26 +1,28 @@
 {
-  "name": "@padcom/vite-lib-config",
+  "name": "@padcom/vite-config-vue-lib",
   "version": "0.0.3",
-  "description": "Vite configuration for a TypeScript library",
+  "description": "Vite configuration for Vue.js library",
   "type": "module",
-  "module": "./vite-lib.config.js",
+  "module": "./vite-vue-lib.config.js",
   "exports": {
     ".": {
-      "import": "./vite-lib.config.js"
+      "import": "./vite-vue-lib.config.js"
     }
   },
   "files": [
-    "vite-lib.config.js",
+    "vite-vue-lib.config.js",
     "README.md"
   ],
   "keywords": [
-    "vite"
+    "vite",
+    "vue"
   ],
   "author": "Matthias Hryniszak <padcom@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@padcom/vite-default-config": "*",
-    "vite-plugin-dts": "^3.9.0"
+    "@padcom/vite-config-lib": "*",
+    "@padcom/vite-config-vue": "*",
+    "eslint": "^8.56.0"
   },
   "devDependencies": {
     "@padcom/eslint-config-base": "^0.6.0",
