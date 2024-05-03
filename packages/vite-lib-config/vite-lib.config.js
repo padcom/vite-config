@@ -3,10 +3,10 @@ import { mergeConfig } from 'vite'
 
 // @ts-ignore because this plugin doesn't export type information
 import dts from 'vite-plugin-dts'
-import { defineDefaultConfig } from './vite-default.config'
+import { defineDefaultConfig } from '@padcom/vite-default-config'
 
 /**
- * @param {import('./vite-default.config').PackageJSON} pkg
+ * @param {import('@padcom/vite-default-config').PackageJSON} pkg
  * @param {import('vite').UserConfig} overrides
  */
 export function defineBaseLibConfig(pkg, overrides = {}) {
@@ -31,7 +31,7 @@ export function defineBaseLibConfig(pkg, overrides = {}) {
 }
 
 /**
- * @param {import('./vite-default.config').PackageJSON} pkg
+ * @param {import('@padcom/vite-default-config').PackageJSON} pkg
  * @param {import('vite').UserConfig} overrides
  */
 export function defineExternalsConfig(pkg, overrides = {}) {
@@ -66,7 +66,7 @@ export function defineExternalsConfig(pkg, overrides = {}) {
 }
 
 /**
- * @param {import('./vite-default.config').PackageJSON} pkg
+ * @param {import('@padcom/vite-default-config').PackageJSON} pkg
  * @param {import('vite').UserConfig} overrides
  */
 export function defineLibConfig(pkg, overrides = {}) {
