@@ -1,15 +1,16 @@
 {
   "name": "@padcom/vite-vue-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vite configuration for Vue.js application",
   "type": "module",
-  "module": "./vite-vue-config.js",
+  "module": "./vite-vue.config.js",
   "exports": {
     ".": {
-      "import": "./vite-vue-config.js"
+      "import": "./vite-vue.config.js"
     }
   },
   "files": [
+    "vite-vue.config.js",
     "README.md"
   ],
   "keywords": [

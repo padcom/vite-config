@@ -1,15 +1,16 @@
 {
   "name": "@padcom/vite-default-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "type": "module",
-  "module": "./vite-default-config.js",
+  "module": "./vite-default.config.js",
   "exports": {
     ".": {
-      "import": "./vite-default-config.js"
+      "import": "./vite-default.config.js"
     }
   },
   "files": [
+    "vite-default.config.js",
     "README.md"
   ],
   "keywords": [
