@@ -1,0 +1,47 @@
+{
+  "name": "@padcom/vite-vue-config",
+  "version": "0.0.1",
+  "description": "Vite configuration for Vue.js application",
+  "type": "module",
+  "module": "./vite-vue-config.js",
+  "exports": {
+    ".": {
+      "import": "./vite-vue-config.js"
+    }
+  },
+  "files": [
+    "README.md"
+  ],
+  "keywords": [
+    "vite"
+  ],
+  "author": "Matthias Hryniszak <padcom@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@padcom/vite-default-config": "*",
+    "@padcom/vite-plugin-vue-i18n": "^0.6.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/test-utils": "^2.4.5",
+    "autoprefixer": "^10.4.19",
+    "jsdom": "^24.0.0",
+    "tailwindcss": "^3.4.3",
+    "vite-svg-loader": "^5.1.0"
+  },
+  "devDependencies": {
+    "@padcom/eslint-config-base": "^0.6.0",
+    "@types/node": "^20.12.8"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@padcom/eslint-config-base"
+    ]
+  },
+  "homepage": "https://github.com/padcom/vite-config#readme",
+  "bugs": {
+    "url": "https://github.com/padcom/vite-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/padcom/vite-config.git"
+  }
+}

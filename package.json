@@ -1,0 +1,16 @@
+{
+  "name": "@padcom/vite-config",
+  "version": "0.0.1",
+  "description": "Reusable Vite configurations",
+  "keywords": [
+    "vite"
+  ],
+  "author": "Matthias Hryniszak <padcom@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/vite-default-config",
+    "packages/vite-lib-config",
+    "packages/vite-vue-config",
+    "packages/vite-vue-lib-config"
+  ]
+}

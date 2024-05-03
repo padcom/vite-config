@@ -1,0 +1,41 @@
+{
+  "name": "@padcom/vite-lib-config",
+  "version": "0.0.1",
+  "description": "Vite configuration for a TypeScript library",
+  "type": "module",
+  "module": "./vite-lib-config.js",
+  "exports": {
+    ".": {
+      "import": "./vite-lib-config.js"
+    }
+  },
+  "files": [
+    "README.md"
+  ],
+  "keywords": [
+    "vite"
+  ],
+  "author": "Matthias Hryniszak <padcom@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@padcom/vite-default-config": "*",
+    "vite-plugin-dts": "^3.9.0"
+  },
+  "devDependencies": {
+    "@padcom/eslint-config-base": "^0.6.0",
+    "@types/node": "^20.12.8"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@padcom/eslint-config-base"
+    ]
+  },
+  "homepage": "https://github.com/padcom/vite-config#readme",
+  "bugs": {
+    "url": "https://github.com/padcom/vite-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/padcom/vite-config.git"
+  }
+}
