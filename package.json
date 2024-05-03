@@ -11,6 +11,6 @@
     "packages/vite-config-default",
     "packages/vite-config-lib",
     "packages/vite-config-vue",
-    "packages/vite-confi-vue-libg"
+    "packages/vite-config-vue-lib"
   ]
 }
