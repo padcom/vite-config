@@ -2,6 +2,23 @@
   "name": "@padcom/vite-config-lib",
   "version": "0.0.8",
   "description": "Vite configuration for a TypeScript library",
+  "author": "Matthias Hryniszak <padcom@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/padcom/vite-config#readme",
+  "bugs": {
+    "url": "https://github.com/padcom/vite-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/padcom/vite-config.git"
+  },
+  "keywords": [
+    "vite"
+  ],
+  "files": [
+    "vite-lib.config.js",
+    "README.md"
+  ],
   "type": "module",
   "module": "./vite-lib.config.js",
   "exports": {
@@ -9,15 +26,6 @@
       "import": "./vite-lib.config.js"
     }
   },
-  "files": [
-    "vite-lib.config.js",
-    "README.md"
-  ],
-  "keywords": [
-    "vite"
-  ],
-  "author": "Matthias Hryniszak <padcom@gmail.com>",
-  "license": "MIT",
   "dependencies": {
     "@padcom/vite-config-default": "^0.0.8",
     "vite-plugin-dts": "^3.9.0"
@@ -30,13 +38,5 @@
     "extends": [
       "@padcom/eslint-config-base"
     ]
-  },
-  "homepage": "https://github.com/padcom/vite-config#readme",
-  "bugs": {
-    "url": "https://github.com/padcom/vite-config/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/padcom/vite-config.git"
   }
 }

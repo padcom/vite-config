@@ -2,6 +2,23 @@
   "name": "@padcom/vite-config-vue",
   "version": "0.0.8",
   "description": "Vite configuration for Vue.js application",
+  "author": "Matthias Hryniszak <padcom@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/padcom/vite-config#readme",
+  "bugs": {
+    "url": "https://github.com/padcom/vite-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/padcom/vite-config.git"
+  },
+  "keywords": [
+    "vite"
+  ],
+  "files": [
+    "vite-vue.config.js",
+    "README.md"
+  ],
   "type": "module",
   "module": "./vite-vue.config.js",
   "exports": {
@@ -9,15 +26,6 @@
       "import": "./vite-vue.config.js"
     }
   },
-  "files": [
-    "vite-vue.config.js",
-    "README.md"
-  ],
-  "keywords": [
-    "vite"
-  ],
-  "author": "Matthias Hryniszak <padcom@gmail.com>",
-  "license": "MIT",
   "dependencies": {
     "@padcom/vite-config-default": "^0.0.8",
     "@vitejs/plugin-vue": "^5.0.4",
@@ -34,13 +42,5 @@
     "extends": [
       "@padcom/eslint-config-base"
     ]
-  },
-  "homepage": "https://github.com/padcom/vite-config#readme",
-  "bugs": {
-    "url": "https://github.com/padcom/vite-config/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/padcom/vite-config.git"
   }
 }
