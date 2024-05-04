@@ -7,7 +7,6 @@ The default configuration consists of the following elements:
 
 - the `@/` alias to `./src`
 - [vite-eslint-plugin](https://www.npmjs.com/package/vite-plugin-eslint/v/1.8.1) plugin
-- [@padcom/vite-plugin-vue-i18n](https://npmjs.com/package/@padcom/vite-plugin-vue-i18n/v/0.6.0)
 - [@vitejs/plugin-vue](https://npmjs.com/package/@vitejs/plugin-vue/v/5.0.4)
 - [@vue/test-utils](https://npmjs.com/package/@vue/test-utils/v/2.4.5)
 - [autoprefixer](https://npmjs.com/package/autoprefixer/v/10.4.19)
