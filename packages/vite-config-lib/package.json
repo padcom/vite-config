@@ -1,6 +1,6 @@
 {
   "name": "@padcom/vite-config-lib",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Vite configuration for a TypeScript library",
   "type": "module",
   "module": "./vite-lib.config.js",
