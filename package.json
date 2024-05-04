@@ -7,6 +7,9 @@
   ],
   "author": "Matthias Hryniszak <padcom@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "publish": "npm publish --if-exists --workspaces"
+  },
   "workspaces": [
     "packages/vite-config-default",
     "packages/vite-config-lib",
