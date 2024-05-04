@@ -29,8 +29,7 @@
   },
   "dependencies": {
     "@padcom/vite-config-lib": "^0.0.8",
-    "@padcom/vite-config-vue": "^0.0.8",
-    "eslint": "^8.56.0"
+    "@padcom/vite-config-vue": "^0.0.8"
   },
   "devDependencies": {
     "@padcom/eslint-config-base": "^0.6.0",
