@@ -54,10 +54,12 @@ export function defineExternalsConfig(pkg, overrides = {}) {
   const globals = external.reduce((acc, entry) => ({ ...acc, [entry]: makeModuleConst(entry) }), {})
 
   const config = {
-    rollupOptions: {
-      external,
-      output: {
-        globals,
+    build: {
+      rollupOptions: {
+        external,
+        output: {
+          globals,
+        },
       },
     },
   }
