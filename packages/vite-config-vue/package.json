@@ -19,7 +19,7 @@
   "author": "Matthias Hryniszak <padcom@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@padcom/vite-config-default": "*",
+    "@padcom/vite-config-default": "^0.0.5",
     "@padcom/vite-plugin-vue-i18n": "^0.6.0",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/test-utils": "^2.4.5",

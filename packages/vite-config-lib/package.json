@@ -19,7 +19,7 @@
   "author": "Matthias Hryniszak <padcom@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@padcom/vite-config-default": "*",
+    "@padcom/vite-config-default": "^0.0.5",
     "vite-plugin-dts": "^3.9.0"
   },
   "devDependencies": {
