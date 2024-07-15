@@ -25,6 +25,9 @@ export function defineBaseLibConfig(pkg, overrides = {}) {
       },
       sourcemap: true,
     },
+    esbuild: {
+      minifyIdentifiers: false,
+    },
   }
 
   return mergeConfig(config, overrides)
