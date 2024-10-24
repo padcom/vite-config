@@ -2,6 +2,7 @@ import { mergeConfig } from 'vite'
 import { defineDefaultConfig } from '@padcom/vite-config-default'
 import svg from 'vite-svg-loader'
 import vue from '@vitejs/plugin-vue'
+import devtools from 'vite-plugin-vue-devtools'
 import autoprefixer from 'autoprefixer'
 
 /**
@@ -20,6 +21,7 @@ export function defineVueBaseConfig(overrides = {}) {
           },
         },
       }),
+      devtools(),
     ],
     css: {
       postcss: {
