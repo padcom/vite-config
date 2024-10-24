@@ -11,10 +11,12 @@ import autoprefixer from 'autoprefixer'
  *
  * @typedef {Object} DevTools
  * @property {DevToolsOptions} devtools
+ *
+ * @typedef {UserConfig & DevTools} ViteConfigVue
  */
 
 /**
- * @param {UserConfig & DevTools} overrides
+ * @param {ViteConfigVue} overrides
  */
 export function defineVueBaseConfig(overrides = {}) {
   const config = {
