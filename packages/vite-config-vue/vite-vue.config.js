@@ -6,7 +6,15 @@ import devtools from 'vite-plugin-vue-devtools'
 import autoprefixer from 'autoprefixer'
 
 /**
- * @param {import('vite').UserConfig} overrides
+ * @typedef {import('vite').UserConfig} UserConfig
+ * @typedef {import('vite-plugin-vue-devtools').VitePluginVueDevToolsOptions} DevToolsOptions
+ *
+ * @typedef {Object} DevTools
+ * @property {DevToolsOptions} devtools
+ */
+
+/**
+ * @param {UserConfig & DevTools} overrides
  */
 export function defineVueBaseConfig(overrides = {}) {
   const config = {
@@ -21,7 +29,7 @@ export function defineVueBaseConfig(overrides = {}) {
           },
         },
       }),
-      devtools(),
+      devtools(overrides.devtools || {}),
     ],
     css: {
       postcss: {
