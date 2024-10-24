@@ -60,7 +60,7 @@ export function defineVueTestConfig(overrides = {}) {
 
 /**
  * @param {import('@padcom/vite-config-default').PackageJSON} pkg
- * @param {UserConfig & DevTools} overrides
+ * @param {ViteConfigVue} overrides
  */
 export function defineVueAppConfig(pkg, overrides = {}) {
   return defineDefaultConfig(pkg, defineVueBaseConfig(defineVueTestConfig(overrides)))
