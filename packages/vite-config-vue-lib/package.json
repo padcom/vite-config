@@ -27,6 +27,9 @@
       "import": "./vite-vue-lib.config.js"
     }
   },
+  "scripts": {
+    "prepublishOnly": "npm install"
+  },
   "dependencies": {
     "@padcom/vite-config-lib": "^0.2.0",
     "@padcom/vite-config-vue": "^0.5.0"

@@ -26,6 +26,9 @@
       "import": "./vite-lib.config.js"
     }
   },
+  "scripts": {
+    "prepublishOnly": "npm install"
+  },
   "dependencies": {
     "@padcom/vite-config-default": "^0.1.0",
     "vite-plugin-dts": "^3.9.0"
