@@ -22,6 +22,7 @@ export function defineBaseLibConfig(pkg, overrides = {}) {
       lib: {
         entry: './src/index.ts',
         name: pkg.name.split('/').at(-1),
+        fileName: 'index',
       },
       sourcemap: true,
     },
