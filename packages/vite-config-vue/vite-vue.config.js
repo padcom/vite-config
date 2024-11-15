@@ -8,9 +8,19 @@ import autoprefixer from 'autoprefixer'
 /**
  * @typedef {import('vite').UserConfig} UserConfig
  * @typedef {import('vite-plugin-vue-devtools').VitePluginVueDevToolsOptions} DevToolsOptions
+ * @typedef {import('@vitejs/plugin-vue').Options } VuePluginOptions
+ * @typedef {import('svgo')} SVGOConfig
+ * @typedef {'url' | 'raw' | 'component'} SVGDefaultImportType
+ *
+ * @typedef {Object} SVGPluginOptions
+ * @property {SVGOConfig} svgoConfig
+ * @property {boolean} svgo
+ * @property {SVGDefaultImportType} defaultImport
  *
  * @typedef {Object} DevTools
  * @property {DevToolsOptions} devtools
+ * @property {VuePluginOptions} vue
+ * @property {SVGPluginOptions} svg
  *
  * @typedef {UserConfig & DevTools} ViteConfigVue
  */
@@ -21,10 +31,10 @@ import autoprefixer from 'autoprefixer'
 export function defineVueBaseConfig(overrides = {}) {
   const config = {
     plugins: [
-      svg({
+      svg(overrides.svg || {
         defaultImport: 'component',
       }),
-      vue({
+      vue(overrides.vue || {
         template: {
           compilerOptions: {
             isCustomElement: tag => tag.includes('-'),
