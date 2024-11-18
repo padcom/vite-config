@@ -31,16 +31,10 @@
     "prepublishOnly": "npm install"
   },
   "dependencies": {
-    "@padcom/vite-config-lib": "^0.2.0",
-    "@padcom/vite-config-vue": "^0.5.0"
+    "@padcom/vite-config-lib": "*",
+    "@padcom/vite-config-vue": "*"
   },
   "devDependencies": {
-    "@padcom/eslint-config-base": "^0.6.0",
-    "@types/node": "^20.12.8"
-  },
-  "eslintConfig": {
-    "extends": [
-      "@padcom/eslint-config-base"
-    ]
+    "@types/node": "^22"
   }
 }

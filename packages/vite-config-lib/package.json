@@ -30,16 +30,10 @@
     "prepublishOnly": "npm install"
   },
   "dependencies": {
-    "@padcom/vite-config-default": "^0.1.0",
-    "vite-plugin-dts": "^3.9.0"
+    "@padcom/vite-config-default": "*",
+    "vite-plugin-dts": "*"
   },
   "devDependencies": {
-    "@padcom/eslint-config-base": "^0.6.0",
-    "@types/node": "^20.12.8"
-  },
-  "eslintConfig": {
-    "extends": [
-      "@padcom/eslint-config-base"
-    ]
+    "@types/node": "*"
   }
 }

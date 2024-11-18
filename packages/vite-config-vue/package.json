@@ -30,21 +30,15 @@
     "prepublishOnly": "npm install"
   },
   "dependencies": {
-    "@padcom/vite-config-default": "^0.1.0",
-    "@vitejs/plugin-vue": "^5.0.4",
-    "@vue/test-utils": "^2.4.5",
-    "autoprefixer": "^10.4.19",
-    "jsdom": "^24.0.0",
-    "vite-plugin-vue-devtools": "^7.5.3",
-    "vite-svg-loader": "^5.1.0"
+    "@padcom/vite-config-default": "*",
+    "@vitejs/plugin-vue": "*",
+    "@vue/test-utils": "*",
+    "autoprefixer": "*",
+    "jsdom": "*",
+    "vite-plugin-vue-devtools": "*",
+    "vite-svg-loader": "*"
   },
   "devDependencies": {
-    "@padcom/eslint-config-base": "^0.6.0",
-    "@types/node": "^20.12.8"
-  },
-  "eslintConfig": {
-    "extends": [
-      "@padcom/eslint-config-base"
-    ]
+    "@types/node": "*"
   }
 }
