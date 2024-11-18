@@ -1,6 +1,6 @@
 {
   "name": "@padcom/vite-config-lib",
-  "version": "0.3.0",
+  "version": "0.10.0",
   "description": "Vite configuration for a TypeScript library",
   "author": "Matthias Hryniszak <padcom@gmail.com>",
   "license": "MIT",
