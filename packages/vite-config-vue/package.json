@@ -1,6 +1,6 @@
 {
   "name": "@padcom/vite-config-vue",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Vite configuration for Vue.js application",
   "author": "Matthias Hryniszak <padcom@gmail.com>",
   "license": "MIT",
