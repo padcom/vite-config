@@ -69,9 +69,26 @@ export function defineVueTestConfig(overrides = {}) {
 }
 
 /**
+ * @param {import('vite').UserConfig} overrides
+ */
+export function defineVendorChunkConfig(overrides = {}) {
+  const config = {
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks: id => id.includes('node_modules') ? 'vendor' : null,
+        },
+      },
+    },
+  }
+
+  return mergeConfig(config, overrides)
+}
+
+/**
  * @param {import('@padcom/vite-config-default').PackageJSON} pkg
  * @param {ViteConfigVue} overrides
  */
 export function defineVueAppConfig(pkg, overrides = {}) {
-  return defineDefaultConfig(pkg, defineVueBaseConfig(defineVueTestConfig(overrides)))
+  return defineDefaultConfig(pkg, defineVendorChunkConfig(defineVueBaseConfig(defineVueTestConfig(overrides))))
 }
