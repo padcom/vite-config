@@ -23,6 +23,9 @@ import eslint from 'vite-plugin-eslint'
  * @param {import('vite').UserConfig} overrides
  */
 export function defineBaseConfig(pkg, overrides = {}) {
+  /**
+   * @param {import('vite').UserConfig} overrides
+   */
   const config = {
     plugins: [
       eslint({
