@@ -1,3 +1,4 @@
+import { relative } from 'node:path'
 import { mergeConfig } from 'vite'
 import { defineDefaultConfig } from '@padcom/vite-config-default'
 import svg from 'vite-svg-loader'
@@ -72,11 +73,25 @@ export function defineVueTestConfig(overrides = {}) {
  * @param {import('vite').UserConfig} overrides
  */
 export function defineVendorChunkConfig(overrides = {}) {
+  const externals = new Set()
+
   const config = {
     build: {
       rollupOptions: {
         output: {
-          manualChunks: id => id.includes('node_modules') ? 'vendor' : null,
+          manualChunks(id) {
+            if (id.includes('node_modules')) {
+              const filename = `${id.split('?').at(0).replaceAll('\x00', '')}`
+              if (!externals.has(filename)) {
+                externals.add(filename)
+                console.log('Including', relative(process.cwd(), filename), 'in vendor chunk')
+              }
+
+              return 'vendor'
+            } else {
+              return null
+            }
+          },
         },
       },
     },
