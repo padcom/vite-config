@@ -36,7 +36,8 @@
     "autoprefixer": "*",
     "jsdom": "*",
     "vite-plugin-vue-devtools": "*",
-    "vite-svg-loader": "*"
+    "vite-svg-loader": "*",
+    "chalk": "*"
   },
   "devDependencies": {
     "@types/node": "*"

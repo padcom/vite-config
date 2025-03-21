@@ -5,6 +5,7 @@ import svg from 'vite-svg-loader'
 import vue from '@vitejs/plugin-vue'
 import devtools from 'vite-plugin-vue-devtools'
 import autoprefixer from 'autoprefixer'
+import chalk from 'chalk'
 
 /**
  * @typedef {import('vite').UserConfig} UserConfig
@@ -84,7 +85,7 @@ export function defineVendorChunkConfig(overrides = {}) {
               const filename = `${id.split('?').at(0).replaceAll('\x00', '')}`
               if (!externals.has(filename)) {
                 externals.add(filename)
-                console.log('Including', relative(process.cwd(), filename), 'in vendor chunk')
+                console.log(chalk.gray('[vendor]'), chalk.blue(relative(process.cwd(), filename)))
               }
 
               return 'vendor'
