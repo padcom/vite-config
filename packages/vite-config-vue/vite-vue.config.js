@@ -43,7 +43,7 @@ export function defineVueBaseConfig(overrides = {}) {
           },
         },
       }),
-      devtools(overrides.devtools || {}),
+      overrides.devtools !== false ? devtools(overrides.devtools || {}) : null,
     ],
     css: {
       postcss: {
