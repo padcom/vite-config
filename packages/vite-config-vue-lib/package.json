@@ -35,6 +35,6 @@
     "@padcom/vite-config-vue": "*"
   },
   "devDependencies": {
-    "@types/node": "^22"
+    "@types/node": ">=22"
   }
 }

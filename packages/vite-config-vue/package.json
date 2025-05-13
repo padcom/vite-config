@@ -30,16 +30,18 @@
     "prepublishOnly": "npm install"
   },
   "dependencies": {
-    "@padcom/vite-config-default": "*",
-    "@vitejs/plugin-vue": "*",
-    "@vue/test-utils": "*",
-    "autoprefixer": "*",
-    "jsdom": "*",
-    "vite-plugin-vue-devtools": "*",
-    "vite-svg-loader": "*",
-    "chalk": "*"
+    "@vitejs/plugin-vue": ">=5",
+    "@vue/test-utils": ">=2",
+    "autoprefixer": ">=10",
+    "jsdom": ">=26",
+    "vite-plugin-vue-devtools": ">=7",
+    "vite-svg-loader": ">=5",
+    "chalk": ">=5"
+  },
+  "peerDependencies": {
+    "@padcom/vite-config-default": "*"
   },
   "devDependencies": {
-    "@types/node": "*"
+    "@types/node": ">=22"
   }
 }

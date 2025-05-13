@@ -30,10 +30,12 @@
     "prepublishOnly": "npm install"
   },
   "dependencies": {
-    "@padcom/vite-config-default": "*",
-    "vite-plugin-dts": "*"
+    "vite-plugin-dts": ">=4.5"
+  },
+  "peerDependencies": {
+    "@padcom/vite-config-default": "*"
   },
   "devDependencies": {
-    "@types/node": "*"
+    "@types/node": ">=22"
   }
 }
