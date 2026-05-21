@@ -14,6 +14,7 @@ export function defineBaseLibConfig(pkg, overrides = {}) {
     plugins: [
       dts({
         insertTypesEntry: true,
+        bundleTypes: true,
         rollupTypes: true,
         logLevel: 'error',
       }),
