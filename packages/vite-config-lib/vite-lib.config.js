@@ -17,6 +17,7 @@ export function defineBaseLibConfig(pkg, overrides = {}) {
         bundleTypes: true,
         rollupTypes: true,
         logLevel: 'error',
+        strictOutput: false,
       }),
     ],
     build: {
