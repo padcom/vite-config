@@ -19,12 +19,12 @@ import chalk from 'chalk'
  * @property {boolean} svgo
  * @property {SVGDefaultImportType} defaultImport
  *
- * @typedef {Object} DevTools
+ * @typedef {Object} PluginOptions
  * @property {DevToolsOptions} devtools
  * @property {VuePluginOptions} vue
  * @property {SVGPluginOptions} svg
  *
- * @typedef {UserConfig & DevTools} ViteConfigVue
+ * @typedef {UserConfig & PluginOptions} ViteConfigVue
  */
 
 /**

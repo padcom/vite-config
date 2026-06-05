@@ -6,8 +6,18 @@ import dts from 'vite-plugin-dts'
 import { defineDefaultConfig } from '@padcom/vite-config-default'
 
 /**
+ * @typedef {import('vite').UserConfig} UserConfig
+ * @typedef {import('vite-plugin-dts').PluginOptions} DtsPluginOverrides
+ *
+ * @typedef {Object} PluginOptions
+ * @property {DtsPluginOverrides} dts
+ *
+ * @typedef {UserConfig & PluginOptions} ViteConfigLib
+ */
+
+/**
  * @param {import('@padcom/vite-config-default').PackageJSON} pkg
- * @param {import('vite').UserConfig} overrides
+ * @param {ViteConfigLib} overrides
  */
 export function defineBaseLibConfig(pkg, overrides = {}) {
   const config = {
@@ -18,6 +28,7 @@ export function defineBaseLibConfig(pkg, overrides = {}) {
         rollupTypes: true,
         logLevel: 'error',
         strictOutput: false,
+        ...overrides.dts,
       }),
     ],
     build: {
