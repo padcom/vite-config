@@ -15,6 +15,15 @@ import { defineDefaultConfig } from '@padcom/vite-config-default'
  * @typedef {UserConfig & PluginOptions} ViteConfigLib
  */
 
+const isWatch = process.argv.includes('-w') || process.argv.includes('--watch')
+// Vite 8 drops its outDir ignore when passing watch options to rolldown,
+// so on macOS (FSEvents) the dts plugin writing dist/types.d.ts re-triggers the build
+// Since watch configuration makes Vite automatically watch the changes we need to
+// make the configuration conditional
+const watch = isWatch
+  ? null
+  : { exclude: ['dist/**'] }
+
 /**
  * @param {import('@padcom/vite-config-default').PackageJSON} pkg
  * @param {ViteConfigLib} overrides
@@ -38,6 +47,7 @@ export function defineBaseLibConfig(pkg, overrides = {}) {
         fileName: 'index',
       },
       sourcemap: true,
+      watch,
     },
     esbuild: {
       minifyIdentifiers: false,
