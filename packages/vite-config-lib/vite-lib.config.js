@@ -21,8 +21,8 @@ const isWatch = process.argv.includes('-w') || process.argv.includes('--watch')
 // Since watch configuration makes Vite automatically watch the changes we need to
 // make the configuration conditional
 const watch = isWatch
-  ? null
-  : { exclude: ['dist/**'] }
+  ? { exclude: ['dist/**'] }
+  : null
 
 /**
  * @param {import('@padcom/vite-config-default').PackageJSON} pkg
